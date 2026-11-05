@@ -1,0 +1,105 @@
+import '../theme/app_colors.dart';
+import 'coach_models.dart';
+
+final mockCoaches = <CoachProfile>[
+  const CoachProfile(
+    id: 'marion-leroy',
+    name: 'Marion Leroy',
+    role: 'Coach performance & force',
+    specialties: [CoachSpecialty.strength, CoachSpecialty.hyrox],
+    bio: 'J’accompagne les sportifs qui veulent devenir plus forts sans perdre leur vitesse. Plans précis, suivi humain et beaucoup de constance.',
+    rating: 4.9,
+    reviewCount: 118,
+    sessions: 642,
+    price: 55,
+    initials: 'ML',
+    accent: AppColors.coral,
+    isOnline: true,
+  ),
+  const CoachProfile(
+    id: 'antoine-bazin',
+    name: 'Antoine Bazin',
+    role: 'Coach running & endurance',
+    specialties: [CoachSpecialty.running, CoachSpecialty.mobility],
+    bio: 'Du premier 10 km au marathon, je construis une progression durable autour de votre quotidien et de vos sensations.',
+    rating: 4.8,
+    reviewCount: 86,
+    sessions: 391,
+    price: 48,
+    initials: 'AB',
+    accent: AppColors.cyan,
+    isOnline: false,
+  ),
+  const CoachProfile(
+    id: 'ines-roche',
+    name: 'Inès Roche',
+    role: 'Coach nutrition sportive',
+    specialties: [CoachSpecialty.nutrition, CoachSpecialty.hyrox],
+    bio: 'Une alimentation simple, flexible et adaptée à votre charge d’entraînement. On construit vos repères sans régime rigide.',
+    rating: 5.0,
+    reviewCount: 64,
+    sessions: 248,
+    price: 42,
+    initials: 'IR',
+    accent: AppColors.mint,
+    isOnline: true,
+  ),
+  const CoachProfile(
+    id: 'lucas-meyer',
+    name: 'Lucas Meyer',
+    role: 'Coach mobilité & prévention',
+    specialties: [CoachSpecialty.mobility, CoachSpecialty.strength],
+    bio: 'Retrouver de l’amplitude, bouger sans appréhension et mieux récupérer : chaque séance est adaptée à votre terrain.',
+    rating: 4.7,
+    reviewCount: 51,
+    sessions: 207,
+    price: 45,
+    initials: 'LM',
+    accent: AppColors.violet,
+    isOnline: true,
+  ),
+];
+
+final mockCoachBookings = <CoachBooking>[
+  const CoachBooking(
+    coachName: 'Marion Leroy',
+    date: 'Jeudi 01 octobre',
+    time: '18:30',
+    type: 'Bilan performance · 45 min',
+    status: 'Confirmé',
+  ),
+  const CoachBooking(
+    coachName: 'Antoine Bazin',
+    date: 'Lundi 05 octobre',
+    time: '07:30',
+    type: 'Plan running · 30 min',
+    status: 'En attente',
+  ),
+];
+
+final mockAthletesFollowed = <AthleteFollowed>[
+  const AthleteFollowed(
+    name: 'Lina Moreau',
+    initials: 'LM',
+    goal: 'Hyrox · 12 semaines',
+    progress: 0.72,
+    lastSession: 'Hier · Lower power',
+    accent: AppColors.volt,
+  ),
+  const AthleteFollowed(
+    name: 'Sami Benali',
+    initials: 'SB',
+    goal: 'Force · cycle 5×5',
+    progress: 0.48,
+    lastSession: 'Lundi · Squat & deadlift',
+    accent: AppColors.cyan,
+  ),
+  const AthleteFollowed(
+    name: 'Chloé Martin',
+    initials: 'CM',
+    goal: 'Retour à la course',
+    progress: 0.86,
+    lastSession: 'Dimanche · 8 km facile',
+    accent: AppColors.mint,
+  ),
+];
